@@ -10,12 +10,12 @@
 <meta charset="utf-8">
 <meta name="description" content="">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Minifolio - Bootstrap Responsive Resume, Personal Portfolio Template</title>
-<link rel="stylesheet" href="css/bootstrap.min.css">
-<link rel="stylesheet" href="css/jquery.fancybox.css">
-<link rel="stylesheet" href="css/main.css">
-<link rel="stylesheet" href="css/responsive.css">
-<link rel="stylesheet" href="css/animate.min.css">
+<title>Bachelor Thesis 1 - Building a Bridge between the Entity-Component-System and Data-Oriented Design</title>
+<link rel="stylesheet" href="../css/bootstrap.min.css">
+<link rel="stylesheet" href="../css/jquery.fancybox.css">
+<link rel="stylesheet" href="../css/main.css">
+<link rel="stylesheet" href="../css/responsive.css">
+<link rel="stylesheet" href="../css/animate.min.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 </head>
 
@@ -24,12 +24,9 @@
 <section class="innerbanner" role="banner">
   <header id="header"> 
     <!-- navigation section  -->
-    <div class="header-content clearfix"> <a class="logo" href="index.html"><img src="images/logo.png" alt="Mafolio"></a>
+    <div class="header-content clearfix"> <a class="logo" href="../index.html"><img src="../images/logo.png" alt="Mafolio"></a>
       <nav class="navigation" role="navigation">
         <ul class="primary-nav">
-          <li><a href="about.html">About Me</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li><a href="#">External link</a></li>
         </ul>
       </nav>
       <a href="#" class="nav-toggle">Menu<span></span></a> </div>
@@ -40,7 +37,7 @@
   <div class="container">
     <div class="col-md-10 col-md-offset-1">
       <div class="innerbanner-text text-center">
-        <p>About me</p>
+        <p>Bachelor Thesis 1 - Building a Bridge between the Entity-Component-System and Data-Oriented Design</p>
         <!-- banner text --> 
       </div>
     </div>
@@ -50,7 +47,7 @@
 <!-- description text section -->
 <section id="inner-description" class="section inner-description">
   <div class="container">
-    <div class="col-md-10 col-md-offset-1 text-center"> <img src="images/designer-pic.jpg" alt="Mafolio">
+    <div class="col-md-10 col-md-offset-1 text-center"> <img src="../images/designer-pic.jpg" alt="Mafolio">
       <h1>Johnathan Doe</h1>
       <p>UX Designer/ Developer</p>
     </div>
@@ -64,14 +61,14 @@
 <!-- description text section --> 
 
 <!-- hire me section -->
-<section id="hireme" class="section hireme">
+<!--<section id="hireme" class="section hireme">
   <div class="container">
     <div class="col-md-8 col-md-offset-2 text-center">
       <h3>Need something specific?</h3>
       <p>We are currently crafting new products but would love to hear from you.</p>
       <a href="https://github.com/kamalcha/ActiveBox/archive/master.zip" class="btn btn-large">Hire me</a> </div>
   </div>
-</section>
+</section>-->
 <!-- hire me section --> 
 <!-- footer -->
 
@@ -81,16 +78,17 @@
       <div class="col-md-12">
         <p>
         <ul class="footer-share">
-          <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+          <!--<li><a href="#"><i class="fa fa-facebook"></i></a></li>-->
           <li><a href="#"><i class="fa fa-twitter"></i></a></li>
           <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-          <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+          <!--<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
           <li><a href="#"><i class="fa fa-pinterest-p"></i></a></li>
-          <li><a href="#"><i class="fa fa-vimeo"></i></a></li>
+          <li><a href="#"><i class="fa fa-vimeo"></i></a></li>-->
         </ul>
         </p>
-        <p>© 2015 All rights reserved. All Rights Reserved<br>
-          Made with <i class="fa fa-heart pulse"></i> by <a href="http://kamalchaneman.com/">Designstub</a></p>
+        <p>© 2015 - <span id="currYear"></span> All rights reserved.<br>
+          Made with <i class="fa fa-heart pulse"></i> by <a href="http://www.designstub.com/">Designstub</a><br>
+		  Edited by Alessandro Morio</p>
       </div>
     </div>
   </div>
@@ -99,11 +97,15 @@
 
 <!-- JS FILES --> 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
-<script src="js/bootstrap.min.js"></script> 
-<script src="js/jquery.fancybox.pack.js"></script> 
-<script src="js/jquery.waypoints.min.js"></script> 
-<script src="js/retina.min.js"></script> 
-<script src="js/modernizr.js"></script> 
-<script src="js/main.js"></script>
+<script src="../js/bootstrap.min.js"></script> 
+<script src="../js/jquery.fancybox.pack.js"></script> 
+<script src="../js/jquery.waypoints.min.js"></script> 
+<script src="../js/retina.min.js"></script> 
+<script src="../js/modernizr.js"></script> 
+<script src="../js/main.js"></script>
+<!-- CUSTOM JS -->
+<script>
+	document.getElementById('currYear').innerHTML = new Date().getFullYear().toString();
+</script>
 </body>
 </html>
