@@ -10,7 +10,7 @@
 <meta charset="utf-8">
 <meta name="description" content="">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Bachelor Thesis 1 - Building a Bridge between the Entity-Component-System and Data-Oriented Design</title>
+<title>Bachelor Thesis 2 - Utilization of Kernel-Level and User-Level Threads in Job Systems</title>
 <link rel="stylesheet" href="../css/bootstrap.min.css">
 <link rel="stylesheet" href="../css/jquery.fancybox.css">
 <link rel="stylesheet" href="../css/main.css">
@@ -39,7 +39,7 @@
   <div class="container">
     <div class="col-md-10 col-md-offset-1">
       <div class="innerbanner-text text-center">
-        <p>Bachelor Thesis 1 - Building a Bridge between the Entity-Component-System and Data-Oriented Design</p>
+        <p>Bachelor Thesis 2 - Utilization of Kernel-Level and User-Level Threads in Job Systems</p>
         <!-- banner text --> 
       </div>
     </div>
@@ -54,14 +54,13 @@
     </div>
     <div class="col-md-10 col-md-offset-1 space">
 		<p style="text-align: justify;">
-		This bachelor thesis examines practices of <i>Data-Oriented Design</i> (DOD) and elements of the <i>Entity-Component-System</i> (ECS) in terms of game development. Furthermore, practices of DOD will be applied to elements of the ECS to enhance the performance of an ECS concerning a cache-friendly design. 
-		</p>
-		<p style="text-align: justify;"> 
-Due to the \textit{component-based architecture</i> (CBA) of the ECS, which uses the object-orientated programming principle <i>composition over inheritance</i>, the code base is well structured, reusable and extendible. That is mandatory when building large and complex games. The ECS consists of three principle elements: entities, components and systems. An entity represents an element in the game world. Components represent task-specific data and have no or few dependencies. Task-specific systems host and process its components. The behaviour of an entity is determined by the components it is composed of. Complex entities just hold more components than simple ones. The reusability of the code base is granted by the components. They can be reused in other projects with no or little change. During a game memory becomes fragmented due to the incoherently creation and deconstruction of game objects. That slows the processing speed of a CPU down.
+		This thesis examines how kernel-level and user-level threads can be applied to job systems. Two approaches of job system implementations will be defined and examined. Measurements of both implementations are performed, evaluated and interpreted.
 		</p>
 		<p style="text-align: justify;">
-To prevent the fragmentation of memory practices of DOD are applied. Basics of a CPU’s cache architecture will be specified to provide a better understanding of DOD. Through DOD practices like <i>contiguous arrays</i>, <i>packed data</i> and <i>hot/cold splitting</i> a significant performance boost is achieved. These practices organize data in a cache-friendly way and will be applied to elements of the ECS. 
-
+The organization and functionality of multi-core processors and multithreading is examined to provide a better understanding how kernel-level and user-level threads work. The concept of processes and threads is explored in order to understand how games, respectively game engines, are handled by an operating system (OS). The topic kernel-level and user-level threads is investigated in detail. The Windows implementations of both thread types, and how they are used, is investigated. Different multithreading strategies for game engines are named. One strategy that utilizes processors very well and current game engines integrate is the <i>job system</i>. The definition of a job and job system will be stated. Moreover, the general approach and flow of a job system is examined. Improvements that can be applied to basic job systems is <i>work stealing</i> and <i>lock-free programming</i>.
+		</p>
+		<p style="text-align: justify;">
+In order to examine the impact of kernel-level and user-level threads to job systems two approaches are defined and implemented: a <i>pure kernel-level thread approach</i> and a <i>hybrid approach</i> using kernel-level and user-level threads. Both approaches are explained and measurements, concerning time and processor utilization, are performed. The results are interpreted and further improvements are discussed.
 		</p>
     </div>
   </div>
@@ -73,8 +72,8 @@ To prevent the fragmentation of memory practices of DOD are applied. Basics of a
 	
   <div class="container" style="height=500px;">
     <div class="col-md-10 col-md-offset-1 text-center" >
-		<object data="../files/Bachelorthesis_Final.pdf" type="application/pdf" width="100%" height="100%">
-			<p>PDF Viewer could not be properly loaded. Link to the PDF file: <a href="../files/Bachelorthesis_Final.pdf">Thesis</a></p>
+		<object data="../files/BA2___Final.pdf" type="application/pdf" width="100%" height="100%">
+			<p>PDF Viewer could not be properly loaded. Link to the PDF file: <a href="../files/BA2___Final.pdf">Thesis</a></p>
 		</object>
   </div>
 </section>
