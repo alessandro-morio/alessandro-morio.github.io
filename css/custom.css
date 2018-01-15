@@ -1,5 +1,7 @@
 .circularImage {
 	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
 	width: 240px;
 	height: 240px;
 	border-radius: 50%;
@@ -7,6 +9,20 @@
 	-moz-border-radius: 50%;
 	background: url(../images/profile_200x200.jpg) no-repeat;
 }
+
+.centerImageDiv {
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.projectImage {}
+/*
+.projectImage {
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}*/
 
 .skilltable {
 	width: 100%;
