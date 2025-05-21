@@ -17,10 +17,24 @@
 <link rel="stylesheet" href="css/responsive.css">
 <link rel="stylesheet" href="css/animate.min.css">
 <link rel="stylesheet" href="css/custom.css">
+<link rel="stylesheet" href="css/dialog.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 </head>
 
 <body>
+	<!-- Overlay and dialog -->
+  <div class="overlay" id="dialogOverlay">
+    <div class="dialog">
+      <h3>Please visit my new portfolio website</h3>
+      <button onclick="openNewWebsite()">Proceed</button>
+    </div>
+  </div>
+
+  <script>
+    function openNewWebsite() {
+		window.open("https://mor-io.com","_self");
+    }
+  </script>
 <!-- header section -->
 <section class="banner" role="banner">
   <header id="header"> 
@@ -46,7 +60,7 @@
         <h1>Alessandro Morio</h1>
 		<p>
 			Full Stack Developer well versed in Web Visualization.<br>
-			7+ years fulltime work experience.<br>
+			8+ years fulltime work experience.<br>
 			Proficient in C# .Net, ASP.Net Core/Framework, Flutter/Dart, Angular, Typescript/Javascript.<br><br>
 			Interested in application architecture, game engine technologies, clean code and multithreading.
 		</p>
