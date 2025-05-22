@@ -36,3 +36,35 @@
       border-radius: 5px;
       cursor: pointer;
     }
+
+.progress-container {
+      width: 150px;
+      height: 150px;
+      position: relative;
+    }
+
+    svg {
+      transform: rotate(-90deg);
+    }
+
+    .circle-bg {
+      fill: none;
+      stroke: #e0e0e0;
+      stroke-width: 15;
+    }
+
+    .circle-progress {
+      fill: none;
+      stroke: #14b8a6; /* teal-500 */
+      stroke-width: 15;
+      stroke-linecap: round;
+      stroke-dasharray: 440;
+      stroke-dashoffset: 440;
+      animation: progressAnimation 2s ease-out forwards;
+    }
+
+    @keyframes progressAnimation {
+      to {
+        stroke-dashoffset: 110; /* 75% progress */
+      }
+    }
